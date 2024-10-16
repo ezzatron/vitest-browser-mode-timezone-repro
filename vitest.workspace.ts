@@ -19,7 +19,9 @@ function createBrowserConfig(name: string) {
         provider: "playwright",
         headless: true,
         providerOptions: {
+          nonsense: true,
           context: {
+            nonsense: true,
             timezoneId: "Asia/Jakarta",
           },
         },

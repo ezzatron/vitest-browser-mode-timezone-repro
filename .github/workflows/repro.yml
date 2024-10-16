@@ -8,6 +8,7 @@ jobs:
       - run: npm ci
       - run: npx playwright install --with-deps
       - run: npm test
+      - run: npx tsc --noEmit
   macos:
     runs-on: macos-latest
     steps:
@@ -15,6 +16,7 @@ jobs:
       - run: npm ci
       - run: npx playwright install --with-deps
       - run: npm test
+      - run: npx tsc --noEmit
   windows:
     runs-on: windows-latest
     steps:
@@ -22,3 +24,4 @@ jobs:
       - run: npm ci
       - run: npx playwright install --with-deps
       - run: npm test
+      - run: npx tsc --noEmit
