@@ -6,16 +6,19 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: npm ci
+      - run: npx playwright install --with-deps
       - run: npm test
   macos:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
       - run: npm ci
+      - run: npx playwright install --with-deps
       - run: npm test
   windows:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
       - run: npm ci
+      - run: npx playwright install --with-deps
       - run: npm test
