@@ -8,7 +8,7 @@ export default defineWorkspace([
   createBrowserConfig("webkit"),
 ]);
 
-function createBrowserConfig(name) {
+function createBrowserConfig(name: string) {
   return defineProject({
     test: {
       name,
