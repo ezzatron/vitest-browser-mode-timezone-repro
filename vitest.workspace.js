@@ -1,6 +1,6 @@
 import { defineProject, defineWorkspace } from "vitest/config";
 
-process.env.TZ = "UTC";
+process.env.TZ = "Asia/Jakarta";
 
 export default defineWorkspace([
   createBrowserConfig("chromium"),
@@ -19,7 +19,7 @@ function createBrowserConfig(name) {
         provider: "playwright",
         headless: true,
         providerOptions: {
-          timezoneId: "UTC",
+          timezoneId: "Asia/Jakarta",
         },
       },
     },
